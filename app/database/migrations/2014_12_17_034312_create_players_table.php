@@ -23,7 +23,7 @@ class CreatePlayersTable extends Migration {
 			$table->integer('goals');
 			$table->integer('assists');
 			
-			$table->foreign('team_id')->references('id')->on('authors');
+			$table->foreign('team_id')->references('id')->on('teams');
 		});
 		//
 	}
