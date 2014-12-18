@@ -1,12 +1,12 @@
 P4 Ultimate Reference
 
-Live URL: http://ultimatereference.smarvelc.me/home
+Live URL: http://ultimatereference.smarvelc.me/
 
 The title of my p4 is Ultimate Reference. For many years I have played ultimate frisbee, and I also follow baseball quite closely. Professional baseball has a nifty site called baseball-reference.com which tracks statistics for professional baseball players. As an ultimate player I thought it would be cool to have something similar for frisbee, except, since the sport is still growing it would be nice to have an interactive site where players could register and add their own data.
 
 Unfortunately I was not able to complete my project by the deadline. However, I wanted to show the scaffolding I had built and what functionality I had created so far. I hope to continue working on this and later adding things like a join table between Players and Teams called Leagues so that players can register for more than one team (which frequently happens in ultimate). Other additions/what I had hoped to do can be found in my Jing demo. I'm sorry I wasn't able to complete this project, but I really enjoyed this course and hope to keep studying laravel and continue working on this web app.
 
-Jing Screencast Demo Link:
+Jing Screencast Demo Link: http://www.screencast.com/t/MDjAyUD2
 
 
 
