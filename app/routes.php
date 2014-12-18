@@ -13,11 +13,7 @@
 /* User Routes */
 Route::get('/', function()
 {
-	echo "Environment: ".App::environment();
-
-	$results = DB::select('SHOW DATABASES;');
-
-	print_r($results);
+	return View::make('index');
 
 });
 
@@ -69,11 +65,20 @@ Route::post('/player/edit', function()
 
 Route::get('/player/create', function()
 {
-	return "create new player";
+	return View::make('player_builder');
 });
 Route::post('/player/create', function()
 {
-	return "create new player";
+	$player = new Player();
+
+	$player->name = Input::get('name');
+	$player->goals = Input::get('goals');
+	$player->assists = Input::get('assists');
+	$player->team()->associate();
+	$player->save();
+
+	return 'You have created a new player';
+
 });
 
 Route::get('/player/delete', function()
@@ -94,12 +99,18 @@ Route::get('/team/', function()
 
 Route::get('/team/create', function()
 {
-	return "create new team";
+	return View::make('team_builder');
 });
 
 Route::post('/team/create', function()
 {
-	return "create new team";
+	$team = new Team();
+
+	$team->name = Input::get('name');
+	$team->wins = Input::get('wins');
+	$team->losses = Input::get('losses');
+	$team->save();
+
 });
 
 Route::get('/team/edit/{id}', function()
